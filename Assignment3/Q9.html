@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant Menu</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .vegetarian {
+      color: green;
+    }
+    .icon {
+      font-size: 1.2em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Restaurant Menu</h1>
+  <table>
+    <caption><strong>Menu</strong></caption>
+    <thead>
+      <tr>
+        <th>Dish Name</th>
+        <th>Category</th>
+        <th>Ingredients</th>
+        <th>Price ($)</th>
+        <th>Rating</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Vegetable Soup <span class="icon">🌱</span></td>
+        <td>Appetizer</td>
+        <td>Carrot, Potato, Onion, Salt, Pepper</td>
+        <td>6.99</td>
+        <td>★★★★☆</td>
+      </tr>
+      <tr>
+        <td>Caesar Salad <span class="icon">🌱</span></td>
+        <td>Appetizer</td>
+        <td>Romaine Lettuce, Croutons, Parmesan, Caesar Dressing</td>
+        <td>7.99</td>
+        <td>★★★☆☆</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Spaghetti Bolognese</td>
+        <td>Main Course</td>
+        <td>Spaghetti, Ground Beef, Tomato Sauce, Garlic, Basil</td>
+        <td>12.99</td>
+        <td>★★★★★</td>
+      </tr>
+      <tr>
+        <td>Main Course</td>
+        <td>Spaghetti, Ground Beef, Tomato Sauce, Garlic, Basil</td>
+        <td>12.99</td>
+        <td>★★★★★</td>
+      </tr>
+      <tr>
+        <td>Chocolate Cake</td>
+        <td>Dessert</td>
+        <td>Chocolate, Sugar, Flour, Eggs, Butter</td>
+        <td>5.99</td>
+        <td>★★★★☆</td>
+      </tr>
+      <tr>
+        <td>Fruit Salad <span class="icon">🌱</span></td>
+        <td>Dessert</td>
+        <td>Apple, Banana, Orange, Strawberry</td>
+        <td>4.99</td>
+        <td>★★★☆☆</td>
+      </tr>
+      <tr>
+        <td>Grilled Chicken</td>
+        <td>Main Course</td>
+        <td>Chicken Breast, Olive Oil, Garlic, Lemon</td>
+        <td>13.99</td>
+        <td>★★★★☆</td>
+      </tr>
+      <tr>
+        <td>Vegetable Stir Fry <span class="icon">🌱</span></td>
+        <td>Main Course</td>
+        <td>Broccoli, Carrot, Bell Pepper, Soy Sauce</td>
+        <td>10.99</td>
+        <td>★★★★☆</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

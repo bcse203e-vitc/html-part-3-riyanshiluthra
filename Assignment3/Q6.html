@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sales Report</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .highlight {
+      font-weight: bold;
+      background-color: #ffeb3b; /* Yellow background for highest sales regions */
+    }
+    .footer {
+      background-color: #f2f2f2;
+      font-weight: bold;
+    }
+    caption {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Sales Report</h1>
+  <table>
+    <caption><strong>Company Sales Report</strong></caption>
+    <thead>
+      <tr>
+        <th>Region</th>
+        <th>Salesperson</th>
+        <th>Product</th>
+        <th>Quantity Sold</th>
+        <th>Unit Price</th>
+        <th>Total Sales</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr class="highlight">
+        <td>North</td>
+        <td>Harshit Choudhary</td>
+        <td>Product A</td>
+        <td>150</td>
+        <td>$20</td>
+        <td>$3000</td>
+      </tr>
+      <tr>
+        <td>South</td>
+        <td>Jiya Sharma</td>
+        <td>Product B</td>
+        <td>120</td>
+        <td>$25</td>
+        <td>$3000</td>
+      </tr>
+      <tr class="highlight">
+        <td>North</td>
+        <td>Manya Luthra</td>
+        <td>Product C</td>
+        <td>200</td>
+        <td>$15</td>
+        <td>$3000</td>
+      </tr>
+      <tr>
+        <td>East</td>
+        <td>Ananya Singh</td>
+        <td>Product D</td>
+        <td>100</td>
+        <td>$30</td>
+        <td>$3000</td>
+      </tr>
+      <tr>
+        <td>West</td>
+        <td>Siya Srivastava</td>
+        <td>Product E</td>
+        <td>80</td>
+        <td>$35</td>
+        <td>$2800</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr class="footer">
+        <td colspan="5">Grand Total Sales</td>
+        <td>$14800</td> <!-- Sum of all sales -->
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+</html>

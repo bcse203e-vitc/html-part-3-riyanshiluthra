@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conference Timetable</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .keynote {
+      background-color: #ffeb3b;
+    }
+    .workshop {
+      background-color: #8bc34a;
+    }
+    .panel-discussion {
+      background-color: #03a9f4;
+    }
+    .networking {
+      background-color: #ff9800;
+    }
+    .footer {
+      font-weight: bold;
+      text-align: center;
+    }
+    .legend {
+      margin-top: 20px;
+    }
+    .legend span {
+      margin-right: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Conference Timetable</h1>
+  <table>
+    <caption><strong>Conference Schedule</strong></caption>
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Room 1</th>
+        <th>Room 2</th>
+        <th>Room 3</th>
+        <th>Room 4</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>9:00 AM - 10:00 AM</td>
+        <td class="keynote" title="Speaker: John Doe - Keynote on 'The Future of Tech'">Keynote</td>
+        <td class="workshop" title="Speaker: Alice Smith - Workshop on 'AI and Machine Learning'">Workshop</td>
+        <td class="panel-discussion" title="Speakers: Bob Johnson, Eva Lee - Panel Discussion on 'Tech in 2025'">Panel Discussion</td>
+        <td class="networking" title="Networking event for all attendees">Networking</td>
+      </tr>
+      <tr>
+        <td>10:00 AM - 11:00 AM</td>
+        <td rowspan="2" class="workshop" title="Speaker: Michael Brown - Workshop on 'Blockchain Basics'">Workshop</td>
+        <td class="keynote" title="Speaker: Sarah White - Keynote on 'Innovation in Healthcare'">Keynote</td>
+        <td class="workshop" title="Speaker: William Green - Workshop on 'Data Science'">Workshop</td>
+        <td class="panel-discussion" title="Speakers: James Black, Natalie Young - Panel Discussion on 'Cybersecurity Trends'">Panel Discussion</td>
+      </tr>
+      <tr>
+        <td>11:00 AM - 12:00 PM</td>
+        <td class="networking" title="Networking event for industry professionals">Networking</td>
+        <td class="panel-discussion" title="Speakers: Samuel White, Linda Blue - Panel Discussion on 'Smart Cities'">Panel Discussion</td>
+      </tr>
+      <tr>
+        <td>12:00 PM - 1:00 PM</td>
+        <td class="workshop" title="Speaker: Olivia Black - Workshop on 'Digital Marketing'">Workshop</td>
+        <td colspan="2" class="keynote" title="Speaker: Michael Harris - Keynote on 'The Power of AI'">Keynote</td>
+        <td class="networking" title="Networking event for all attendees">Networking</td>
+      </tr>
+      <tr>
+        <td>1:00 PM - 2:00 PM</td>
+        <td class="workshop" title="Speaker: Laura Green - Workshop on 'Web Development'">Workshop</td>
+        <td rowspan="2" class="panel-discussion" title="Speakers: Karen White, David Kim - Panel Discussion on 'Future of Work'">Panel Discussion</td>
+        <td class="keynote" title="Speaker: Emily Stone - Keynote on 'AI and Ethics'">Keynote</td>
+        <td class="workshop" title="Speaker: Daniel Brown - Workshop on 'UX/UI Design'">Workshop</td>
+      </tr>
+      <tr>
+        <td>2:00 PM - 3:00 PM</td>
+        <td class="networking" title="Networking event for entrepreneurs">Networking</td>
+        <td class="workshop" title="Speaker: Olivia Brown - Workshop on 'Growth Hacking'">Workshop</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr class="footer">
+        <td colspan="5">Conference Timetable - Day 1</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <div class="legend">
+    <h3>Legend</h3>
+    <span><span style="background-color: #ffeb3b; padding: 5px;">&nbsp;&nbsp;&nbsp;</span> Keynote</span>
+    <span><span style="background-color: #8bc34a; padding: 5px;">&nbsp;&nbsp;&nbsp;</span> Workshop</span>
+    <span><span style="background-color: #03a9f4; padding: 5px;">&nbsp;&nbsp;&nbsp;</span> Panel Discussion</span>
+    <span><span style="background-color: #ff9800; padding: 5px;">&nbsp;&nbsp;&nbsp;</span> Networking</span>
+  </div>
+
+</body>
+</html>
