@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Company Organization Hierarchy</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    caption {
+      font-weight: bold;
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+    .department {
+      background-color: #f9f9f9;
+    }
+    .manager-row {
+      background-color: #d9f7be;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Company Organization Hierarchy</h1>
+  <table>
+    <caption><strong>Departments Overview</strong></caption>
+    <thead>
+      <tr>
+        <th>Department Name</th>
+        <th>Manager</th>
+        <th>Number of Employees</th>
+        <th>Department Budget ($)</th>
+        <th>Percentage of Total Budget (%)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="department">
+        <td rowspan="2">Human Resources</td>
+        <td class="manager-row">Alice Johnson</td>
+        <td>10</td>
+        <td>500,000</td>
+        <td>10%</td>
+      </tr>
+      <tr class="manager-row">
+        <td>Bob Smith</td>
+        <td>5</td>
+        <td>200,000</td>
+        <td>4%</td>
+      </tr>
+      <tr class="department">
+        <td rowspan="3">Engineering</td>
+        <td class="manager-row">Charles Davis</td>
+        <td>30</td>
+        <td>2,500,000</td>
+        <td>50%</td>
+      </tr>
+      <tr class="manager-row">
+        <td>David Brown</td>
+        <td>20</td>
+        <td>1,200,000</td>
+        <td>24%</td>
+      </tr>
+      <tr class="manager
