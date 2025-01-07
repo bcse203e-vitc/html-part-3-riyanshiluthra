@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sports Tournament League Table</title>
+  <style>
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      text-align: center;
+      border: 1px solid #ddd;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    .highlight {
+      font-weight: bold;
+      background-color: #d4edda;
+    }
+    tfoot {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>Sports Tournament League Table</caption>
+    <colgroup>
+      <col span="2" />
+      <col span="4" />
+    </colgroup>
+    <thead>
+      <tr>
+        <th scope="col" id="team-name">Team Name</th>
+        <th scope="col" id="matches-played">Matches Played</th>
+        <th scope="col" id="wins">Wins</th>
+        <th scope="col" id="losses">Losses</th>
+        <th scope="col" id="draws">Draws</th>
+        <th scope="col" id="points">Points</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Team A</td>
+        <td>10</td>
+        <td>8</td>
+        <td>2</td>
+        <td>0</td>
+        <td class="highlight">24</td>
+      </tr>
+      <tr>
+        <td>Team B</td>
+        <td>10</td>
+        <td>7</td>
+        <td>3</td>
+        <td>0</td>
+        <td class="highlight">21</td>
+      </tr>
+      <tr>
+        <td>Team C</td>
+        <td>10</td>
+        <td>6</td>
+        <td>3</td>
+        <td>1</td>
+        <td class="highlight">19</td>
+      </tr>
+      <tr>
+        <td>Team D</td>
+        <td>10</td>
+        <td>5</td>
+        <td>5</td>
+        <td>0</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>Team E</td>
+        <td>10</td>
+        <td>4</td>
+        <td>6</td>
+        <td>0</td>
+        <td>12</td>
+      </tr>
+      <tr>
+        <td>Team F</td>
+        <td>10</td>
+        <td>3</td>
+        <td>7</td>
+        <td>0</td>
+        <td>9</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="5">Total Matches Played</td>
+        <td>60</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>
